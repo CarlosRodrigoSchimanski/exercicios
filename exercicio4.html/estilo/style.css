@@ -3,56 +3,106 @@
 * {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
 }
 
 body{
-    width: 100%;
-    height: 100%;
+    font-size: 100%;
 }
 
-.menu-principal{
-    width: 100%;
+.cabecalho{
     background-color: #252323;
     height: 60px;
 }
 
-main{
+.main{
+    max-width: 980px;
     margin: auto;
-    width: 980px;
-    position: relative;
+    padding-top: 20px;
+    height: 40px;
 }
 
-.logo{
-    padding: 20px;
-    width: 5%;
-    float: left;
-}
-
-.redes-sociais > ul > li{
-    padding: 20px 2px 0px 2px;
-    display: inline-block;
+.main > nav{
+    padding: 5px;
     float: right;
-    width: 3%;
-}
-.header-1{
-    width: 100%;
-    border-top: 4px solid rgb(172, 172, 172);
-    border-bottom: 4px solid rgb(172, 172, 172);
-
 }
 
-
-ul.menu > li{
-    display: inline-block;
+.main > nav > a{
+    padding: 0px 0px 0px 10px;
 }
 
-.menu > li > a{
-    text-decoration: none;
-    color: rgb(90, 90, 90);
+.menu{
+    max-width: 980px;
+    height: 60px;
+    margin: auto;
+}
+
+.menu > nav{
+    padding-top: 20px;
+}
+
+.menu > nav > a{
     font-size: 14px;
-    text-transform: uppercase;
+    padding: 20px 20px 20px 0px;
+    color: rgb(107, 107, 107);
 }
 
-.busca{
+.menu > nav > a:hover{
+    color: aqua;
+    border-bottom: 2px solid aqua;
+}
+
+.menu > nav > input{
+    margin-top: -5px;
+    height: 30px;
+    background-image: url(../imagens/icone-search.png);
+    background-repeat: no-repeat;
+    background-position: 85%;
+    border: 3px solid rgb(107, 107, 107);
+    border-radius: 5px;
     float: right;
+}
+
+.slider{
+    background-color: black;
+    background-image: url('../imagens/banner.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-top: 3px solid rgb(107, 107, 107);
+    width: 100%;
+    height: 530px;
+}
+
+.slide-button{
+    max-width: 980px;
+    margin: auto;
+    height: 100%;
+}
+
+.slide-button > button{
+    background-color: transparent;
+    font-size: 0px;
+    border: none;
+    margin-top: 210px;
+    height: 51px;
+    width: 25px;
+}
+
+.slide-button > button#ant{
+    background-image: url('../imagens/anterior.png');
+}
+
+.slide-button > button#ant:hover{
+    border-left: 3px solid white;
+}
+
+.slide-button > button#pos{
+    background-image: url('../imagens/proximo.png');
+    float: right;
+}
+
+.slide-button > button#pos:hover{
+    border-left: 1px solid transparent;
+    border-right: 3px solid white;
 }

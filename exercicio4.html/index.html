@@ -9,35 +9,38 @@
 </head>
 <body>
     
-    <header class="menu-principal">
-            <main>
-                <div class="logo">
-                    <img src="imagens/logo.png" alt="logo da empresa">
-                </div>
-                <div class="redes-sociais">
-                    <ul>
-                        <li><a href="#"><img src="imagens/linkedin.png" alt="linkedin"></a></li>
-                        <li><a href="#"><img src="imagens/face.png" alt="facebock"></a></li>
-                        <li><a href="#"><img src="imagens/tw.png" alt="tweter"></a></li>
-                        <li><a href="#"><img src="imagens/rss.png" alt=""></a></li>
-                    </ul>
-                </div>
-            </main>  
+    <header class="cabecalho">
+        <div class="main">
+            <img src="imagens/logo.png" alt="logo da empresa">
+            <nav>
+                <a href="#"><img src="imagens/linkedin.png" alt="linkedin"></a>
+                <a href="#"><img src="imagens/face.png" alt="facebock"></a>
+                <a href="#"><img src="imagens/tw.png" alt="tweter"></a>
+                <a href="#"><img src="imagens/rss.png" alt=""></a>
+            </nav> 
+        </div>
+             
     </header>
-
-    <main class="header-1">
-        
-        <ul class="menu"> 
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Service</a></li>
-            <li><a href="#">Pages</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contact</a></li>
-            <div class="busca">
-                <input type="text">
+    <main>
+        <header class="menu">
+            <nav>
+                <a href="#">HOME</a>
+                <a href="#">ABOUT</a>
+                <a href="#">SERVICE</a>
+                <a href="#">PAGE</a>
+                <a href="#">BLOG</a>
+                <a href="#">CONTACT</a>
+                <input placeholder="    SEARCH " type="text">
+            </nav>
+        </header>
+        <header class="slider">
+            <div class="slide-button">
+                <button id="ant" onclick="anterior()"></button>
+                <button id="pos" onclick="posterior()"></button>
             </div>
-        </ul>
+        </header>
     </main>
+    <script src="./js/config.js"></script>
 </body>
 </html>
+
