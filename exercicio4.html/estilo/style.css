@@ -100,6 +100,11 @@ header{
     position: absolute;
 }
 
+.button > button{
+    background-color: transparent;
+    border: none;
+}
+
 @media (max-width: 610px){
     .menu > nav > a:hover{
         color: rgb(101, 206, 224);
