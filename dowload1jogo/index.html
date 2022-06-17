@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/logo.ico" type="image/x-icon">
+    <title>meu 1 jogo</title>
+    <style>
+        body {
+            height: 100vh;
+            background: black url('./img/geral.jpg') center center no-repeat fixed;
+            background-size: cover;
+        }
+        main {
+            background-color:black;
+            max-width: 1000px;
+            padding: 15px;
+            margin: auto;
+            border: 2px solid blue;
+            border-radius: 15px;
+        }
+
+        .header{
+            padding: 10px;
+            color: antiquewhite;
+            background-color: black;
+            border-radius: 25px 25px 0px 0px;
+        }
+
+        img{
+            max-width: 100%;
+            display: block;
+        }
+
+        .imagem{
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .imagem div{
+            padding: 5px;
+            flex: 1 1 300px;
+        }
+
+        .dowload{
+            padding: 15px;
+            max-width: 100%;
+        }
+
+        .dowload a{
+            display: block;
+            padding: 10px;
+            color: antiquewhite;
+            background-color: green;
+            border-radius: 15px;
+            margin: auto;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .footer{
+            color: antiquewhite;
+            text-align: center;
+            padding: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <div class="header">
+            <h1>1 jogo criado por mim</h1>
+            <p>Este jogo foi feito para testar a utilização de objetos criados por mim em python.</p>
+        </div>
+
+        <div class="imagem">
+            <div><img src="./img/ingame.jpg" alt="primeira imagem"></div>
+            <div><img src="./img/ingame2.jpg" alt="segunda imagem"></div>
+        </div>
+        <div class="imagem">
+            <div><img src="./img/Screenshot_1.png" alt="primeira imagem"></div>
+            <div><img src="./img/Screenshot_7.png" alt="segunda imagem"></div>
+        </div>
+
+        <div class="dowload"><a href="./dowload/junpcoinistaler.exe">DOWLOAD</a></div>
+
+        <div class="footer">Criado por Carlos Rodrigo Schimanski</div>
+
+    </main>
+    
+</body>
+</html>
