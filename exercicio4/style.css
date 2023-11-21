@@ -21,14 +21,6 @@ th {
     height: 40px;
 }
 
-tr  >  th:nth-child(1){
-    border-radius: 8px 0 0 8px;
-}
-
-tr  >  th:nth-child(8){
-    border-radius: 0 8px 8px 0;
-}
-
 tbody > tr:nth-child(even) {
     background-color: #949494;
 }
@@ -39,6 +31,8 @@ tbody > tr:nth-child(odd) {
 
 .exemplo{
     border-collapse: collapse;
+    border-radius: 8px 8px 0 0;
+
     box-shadow: 0px 1px 6px #2e2d2d;
 }
 
@@ -72,4 +66,12 @@ tr > td:nth-child(8) > button:nth-child(2) {
     margin: 4px;
     border: 2px solid #ff0000;
     border-radius: 8px;
+}
+
+tr  >  th:nth-child(1){
+    border-radius: 8px 0 0 8px;
+}
+
+tr  >  th:nth-child(8){
+    border-radius: 0 8px 8px 0;
 }
