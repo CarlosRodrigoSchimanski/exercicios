@@ -11,14 +11,14 @@ const numero3 = io.readInt()
 
 //"= b2 – 4ac
 
-const delta = Math.sqrt((numero2 * numero2) - 4 * numero1 * numero3)
+const delta = (numero2 * numero2) - (4 * numero1 * numero3)
 
 if (delta < 0) {
     io.write('o delta não possui resultados reais')
 }else if (delta === 0){
     io.write('equação possui apenas um resultado real ou possui dois resultados iguais')
 }else{
-    const resultado1 = (-numero2 + delta) / 2
-    const resultado2 = (-numero2 - delta) / 2
-    io.write(`valos 1 ${resultado1} valor 2 ${resultado2}`)
+    const resultado1 = (-numero2 + Math.sqrt(delta)) / (2 * numero1)
+    const resultado2 = (-numero2 - Math.sqrt(delta)) / (2 * numero1)
+    io.write(`valor 1 ${resultado1} valor 2 ${resultado2}`)
 }
