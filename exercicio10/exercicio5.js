@@ -11,7 +11,7 @@ let valor = io.readInt()
 let total = 1
 
 while (valor > 1) {
-    total = total * valor
+    total *=  valor
     valor--
 }
 
