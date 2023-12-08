@@ -11,12 +11,14 @@ const vetor = [1000, 40, 340, 501, 500, 1093, 245, 21]
 */
 const preços = [1000, 40, 340, 501, 500, 1093, 245, 21]
 
-const reajuste = preços.map(item => {
-    if (item > 500) {
-        return item - (item * 0.15)
-    }else {
-        return item
-    }
-})
-
-io.write(reajuste)
+const desconto = (preços) => {
+    preços = preços.map(item => {
+        if (item > 500) {
+            return item - (item * 0.15)
+        }else {
+            return item
+        }
+    })
+    io.write(preços)
+}
+desconto(preços)

@@ -5,7 +5,8 @@ em texto. Dica: todas as variáveis javascript possuem uma função .toString()
 */
 
 const lista = [1,2,3,4]
-function transformaEmTexto(array){
-    return array.map(elemento => elemento.toString())
+const desconto = (array) => {
+    array = array.map(elemento => elemento.toString())
+    io.write(array)
 }
-console.log(transformaEmTexto(lista))
+desconto(lista)
