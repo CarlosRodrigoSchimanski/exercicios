@@ -10,18 +10,10 @@ pela função de callback.
 const feriados = ['dia das maes', 'dia das crianças', 'natal', 'revion', 'pascoa', 'natal']
 
 const filtrarPalavras = (lista, filtro) =>{
-    let natais = []
-    lista.forEach(feriado => {
-        filtro(feriado, natais)
-    })
-    return natais
+    return lista.filter(filtro)
 }
 
-const filtro = (feriado, item) =>{
-    if(feriado === 'natal'){
-        item.push(feriado)
-    }
-}
+const filtro = feriado => feriado === 'natal'
 
 const total = filtrarPalavras(feriados,filtro)
 io.write(total)
