@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <form id="formulario">
+        <h1>Cadastro de produto</h1>
+        
+        <section>
+            <label for="codigo">Código</label>
+            <input id="codigo" name="codigo" placeholder="codigo" required/>
+        </section>
+
+        <section>
+            <label for="nome">Nome</label>
+            <input id="nome" name="nome" placeholder="nome" required/>
+        </section>
+
+        <section>
+            <label for="categoria">Categoria</label>
+            <select name="categoria" id="categoria">
+                <option value="alimento">Alimento</option>
+                <option value="limpesa">Limpesa</option>
+                <option value="higiene">Higiene</option>
+            </select>
+        </section>
+
+        <section>
+            <label for="preco">Preço</label>
+            <input id="preco" name="preco" placeholder="preco" required/>
+        </section>
+
+        <section>
+            <label for="quantidade">Quantidade</label>
+            <input id="quantidade" name="quantidade" placeholder="quantidade" required/>
+        </section>
+
+        <button type="submit">cadastrar</button>
+    </form>
+
+    <div id="resultado"></div> 
+</body>
+</html>
