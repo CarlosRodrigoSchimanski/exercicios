@@ -1,7 +1,5 @@
-import {
-    chavePublica,
-    chavePrivada
-} from './configure.js'
+import {chavePublica,chavePrivada} from './configure.js'
+import { filtrar } from './funcoens.js'
 
 const timestamp = (new Date()).getTime()
 const publicKey = chavePublica
@@ -14,36 +12,13 @@ const promise = fetch(`https://gateway.marvel.com:443/v1/public/characters?apike
 promise
     .then((response) => response.json()) // convertendo para json em uma linha
     .then((resposta) => {
-        console.log(resposta.data.results) // para exibir nesta api tem que usar o .date.results
-
         const personagems = resposta.data.results// pegando cada clase fornecida pela api
-        console.log(personagems)
-        
         
         const content = document.querySelector('#content') // pegando a div
         personagems.forEach(personagem => { // fazendo um loop para mostar o nome e a foto de cada personagem
 
-            //..................................
-            const comic = personagem.comics.items.filter((item, index) => {
-                return index < 2
-            })
-    
-            let revistas = ''
-    
-            comic.forEach((item) => {
-                revistas += `<li>${item.name}</li>`
-            })
-
-            //.................................................
-            const series = personagem.series.items.filter((item, index) => {
-                return index < 2
-            })
-    
-            let seres = ''
-    
-            series.forEach((item) => {
-                seres += `<li>${item.name}</li>`
-            })
+            let revistas = filtrar(personagem.comics,2)
+            let seres = filtrar(personagem.series,2)
 
             content.innerHTML +=
             `
