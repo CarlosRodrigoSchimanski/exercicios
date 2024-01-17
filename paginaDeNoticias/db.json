@@ -1,0 +1,18 @@
+{
+  "posts": [
+    {
+      "titulo": "O que GTA 6 irá superar Red Dead Redemption 2?",
+      "autoria": "exemplo autoria",
+      "imagemdestaque": "https://sm.ign.com/t/ign_br/screenshot/default/design-sem-nome-31_7a8j.960.png",
+      "texto": "O tão aguardado trailer de GTA 6 finalmente foi revelado oficialmente pela Rockstar Games, após 10 anos de espera finalmente tivemos novidades sobre o sucessor do popular Grand Theft Auto 5. Na nova aventura, estaremos de volta à icônica cidade de Vice City, que não aparecia na franquia desde GTA Vice City Stories, lançado em 2006. Com tamanha expectativa e sendo o jogo lançado após Red Dead Redemption 2, mas o que será que o game precisa fazer para ser melhor que seu antecessor?",
+      "id": "eff9"
+    },
+    {
+      "titulo": "Notas da Atualização 14.1 do Teamfight Tactics",
+      "autoria": "exemplo autoria",
+      "imagemdestaque": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltbeb00123520d4092/655678b6e9c23cc85627592c/111923_RG_REMIX-RUMBLE_CLIENT_LAUNCH-MARQUEE_Banner.jpg",
+      "texto": " O primeiro retorno de conjunto do TFT está quase entre nós, e estamos nos preparando para explorar o espaço com o retorno da Atualização Intermediária Galáxias: Retorno às Estrelas, como um modo de jogo temporário disponível da Atualização 14.02 (24 de janeiro) até o fim da Atualização 14.04 (19 de março), durante o nosso evento Legado Lunar!",
+      "id": "9b69"
+    }
+  ]
+}
