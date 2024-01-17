@@ -6,7 +6,7 @@ const excluir = async (id) =>{ // função chamada no butao que passa o id
 }
 
 const editar = async (id) =>{ //pasando o id como parametro para a pagina de update
-  window.location = `update.html?id=${id}`
+  window.location = `../viels/update.html?id=${id}`
 }
 
 // buscar os posts na api
