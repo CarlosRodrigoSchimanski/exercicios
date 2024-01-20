@@ -1,0 +1,23 @@
+{
+  "Users": [
+    {
+      "name": "Carlos",
+      "email":"carlao64@gmail.com",
+      "password": "1234",
+      "imageLogim": "https://sm.ign.com/t/ign_br/screenshot/default/design-sem-nome-31_7a8j.960.png",
+      "id": "eff9"
+    }
+  ],
+  "Store": [
+    {
+      "name": "head phone",
+      "price": "50",
+      "description": "This is a headphone, it's very good for listening to music",
+      "image": "",
+      "id" : "eff8"
+    }
+  ],
+  "Products": [
+    
+  ]
+}
