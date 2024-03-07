@@ -22,10 +22,7 @@ function getDate(){
 
 function makeStudent(data) {
     return{
-        name: data.name,
-        class: data.class,
-        status: data.status,
-        document: data.document,
+        ...data, // sprd operator abre as caracteristicas do objeto como forão definidas
         createdAt: getDate()
     }
 }
