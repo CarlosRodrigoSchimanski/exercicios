@@ -26,8 +26,22 @@ User {
 - Deve ser possível buscar um usuário pelo email
 - Deve ser possível criar um post relacionado a um usuário, passando: content
 */
-const repository = []
-let userID = 0
+class Repository{
+    constructor(){
+        this.repository = []
+        this.userID = 0
+    }
+
+    addUser(data){
+        const user = new User(data, this.userID++)
+        this.repository.push(user)
+        return user
+    }
+
+    findById(id){
+        return  this.repository.find(item => item.id === id )
+    }
+}
 
 class Post{
     constructor(content,postID){
@@ -38,9 +52,9 @@ class Post{
 }
 
 class User{
-    constructor(data){
+    constructor(data,id){
         this.postID = 0
-        this.id = (userID++).toString()
+        this.id = id
         this.nickname = data.nickname
         this.email = data.email
         this.password = data.password
@@ -72,28 +86,12 @@ class User{
     }
 }
 
+const repository1 = new  Repository()
 
-const user1 = new  User({
-    nickname:'felipe',
-    email:'felipe@gmail.com',
-    password:'123456'
-})
+const juan = repository1.addUser({nickname:"juan", email : "juan@gmail.com" , password : '123456' })
+const lucas = repository1.addUser({nickname:"lucas", email : "lucas@gmail.com" , password : '123456' })
 
-const user2 = new  User({
-    nickname:'maria',
-    email:'maria@hotmail.com',
-    password:'abcdefg'
-})
-
-user1.createPost('Olá!')
-console.log(user1)
-user1.update({
-    nickname: 'José',
-    email: 'josedasilva_97@hotmail.com',
-    password: 'NovaSenha123'
-})
-user1.updatePost(0,'Tudo bem?')
-console.log(user1)
-console.log(user1.findPost(0))
-
-// to com sono o resto faço depois
+lucas.createPost("Hola como estas")
+console.log(repository1)
+console.log(repository1.findById(lucas.id))
+console.log(repository1.findById(lucas.id).findPost(0))
